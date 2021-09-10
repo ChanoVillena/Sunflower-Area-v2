@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+    .whatiscontent {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .whatis {
+        margin-block: 50px;
+    }
+
+    .whatisinfo {
+        text-align: left;
+    }
+
+    .sunflowerfacts {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .sunflowerfacts:last-child {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .sunflowerfacts:nth-child(2) {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+}

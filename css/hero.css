@@ -1,0 +1,208 @@
+:root {
+    --maincolor: #f6a90f;
+    --herotext: white;
+    --textmain: black;
+    --textcolor: rgb(95, 95, 95);
+    --boxshadow1: rgba(0,0,0,0.19);
+	--boxshadow2: rgba(0,0,0,0.23);
+}
+
+/* ===== HERO SECTION ===== */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.videobg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+}
+
+.herocontent {
+    height: 115%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--herotext);
+}
+
+.herocontent h1 {
+    font-size: clamp(1.5rem, 10.3vw, 2.7rem);
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.herocontent h1 span{
+    color: var(--maincolor);
+    font-size: 2.5rem;
+}
+
+.herocontent p {
+    width: min(90%, 600px)
+}
+
+.herobtn {
+    position: relative;
+    background: transparent;
+    padding: 8px 20px;
+    border: var(--maincolor) 2px solid;
+    outline: none;
+    border-radius: 100px;
+    color: var(--maincolor);
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+.herobtn:hover {
+    color: var(--herotext);
+}
+
+.herobtn span {
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: var(--maincolor);
+    transition: width 500ms, height 500ms;
+    z-index: -1;
+}
+
+.herobtn:hover span {
+    width: 400px;
+    height: 400px;
+}
+
+
+
+/* ===== NAVBAR SECTION ===== */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.header1 {
+    transition: 500ms;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 5px;
+}
+
+.navbar .navlogo{
+    font-size: clamp(1rem, 6.5vw, 1.5rem);
+    color: var(--herotext); 
+    font-weight: 700;
+}
+
+.navbar a span {
+    color: var(--maincolor);
+    font-size: 2rem;
+}
+
+.navmenubtn {
+    margin-top: 7px;
+    width: max-content;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navmenubtn img {
+    transition: 500ms;
+}
+
+.navmenubtnclick {
+    transform: rotate(180deg);
+}
+
+.scrolled {
+    background: black
+}
+
+
+/* ===== NAVMENU ===== */
+.navmenu {
+   display: none;
+}
+
+.navzkie {
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.navmenulinks {
+    margin-top: 10px;
+    border-radius: 50px;
+    padding: 8px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--maincolor);
+}
+
+.navmenu div a i {
+    font-size: 2rem;
+    font-weight: 100;
+    /* color: var(--herotext); */
+}
+
+.navmenulinkz {
+    color: var(--herotext);
+}
+
+.sun,
+.moon {
+    color: var(--herotext);
+}
+
+.sun {
+    display: none;
+}
+
+.moondisappear {
+    display: none;
+}
+
+.sunappear {
+    display: flex;
+}
+
+.active {
+    color: yellow;
+}
+
+
+

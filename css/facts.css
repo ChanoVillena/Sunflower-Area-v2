@@ -1,0 +1,166 @@
+:root {
+    --maincolor: #f6a90f;
+    --herotext: white;
+    --textmain: black;
+    --textcolor: rgb(95, 95, 95);
+    --boxshadow1: rgba(0,0,0,0.19);
+	--boxshadow2: rgba(0,0,0,0.23);
+}
+
+.facts {
+    position: relative;
+    padding-block: 50px;
+    overflow: hidden;
+}
+
+.whatis {
+    margin-block: 50px;
+}
+
+.whatis h2 {
+    font-size: clamp(1.7rem, 8.5vw, 2.5rem);
+    color: var(--textmain);
+}
+
+.whatiscontent {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+}
+
+.whatisimg {
+    width: min(450px, 90%);
+    padding-top: 300px;
+    background: url(/img/sunflowercon1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: .5rem;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    transition: 300ms;
+}
+
+.whatisimg:hover,
+.whatisimg:focus {
+    transform: scale(1.03);
+}
+
+.whatisinfo {
+    text-align: center;
+}
+
+.whatisinfo p {
+    margin-top: 10px;
+    color: var(--textcolor);
+    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 4vw, 1rem);
+    max-width: 600px;
+}
+
+.morefacts {
+    padding-block: 50px;
+}
+
+.didyou {
+    text-align: center;
+}
+
+.didyou h2 {
+    font-size: clamp(1.7rem, 8.5vw, 2.5rem);
+    color: var(--textmain);
+}
+
+.didyou span {
+    color: var(--textcolor);
+    font-size: clamp(0.75rem, 3vw, 0.875rem)
+}
+
+.sunflowerfacts {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 70px;
+}
+
+.sunflowerfacts:last-child {
+    margin-bottom: 0;
+}
+
+.factsimg1 {
+    width: min(450px, 90%);
+    padding-top: 300px;
+    background: url(/img/redsunflower.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: .5rem;
+    box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+}
+
+.factsimg2 {
+    width: min(450px, 90%);
+    padding-top: 300px;
+    background: url(/img/youngsunflower.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: .5rem;
+    box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+}
+
+.factsimg3 {
+    width: min(450px, 90%);
+    padding-top: 300px;
+    background: url(/img/tallsunflower.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: .5rem;
+    box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+}
+
+.factsinfo {
+    text-align: center;
+}
+
+.factsinfo h2 {
+    font-size: clamp(1.2rem, 5vw, 1.7rem);
+    color: var(--textmain);
+}
+
+.factsinfo p {
+    margin-top: 10px;
+    color: var(--textcolor);
+    font-size: clamp(0.875rem, 4vw, 1rem);
+    max-width: 600px;
+}
+
+/* 
+
+.sunflowerfacts h2{
+    font-size: clamp(1.2rem, 5vw, 1.7rem);
+    color: var(--textmain);
+}
+
+.sunflowerfacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.factscontent div {
+    width: min(450px, 90%);
+    padding-top: 300px;
+    background: url(/img/redsunflower.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: .5rem;
+    box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+    transition: 300ms;
+} */
