@@ -1,0 +1,66 @@
+:root {
+    --bodycolor: white;
+    --maincolor: #f6a90f;
+    --herotext: white;
+    --textmain: black;
+    --textcolor: rgb(95, 95, 95);
+    --boxshadow1: rgba(0,0,0,0.19);
+	--boxshadow2: rgba(0,0,0,0.23);
+}
+
+.about {
+    position: relative;
+    margin-top: 50px;
+    padding-block: 50px;
+    background: url(/img/aboutus.webp);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.aboutinfo > * {
+    color: white;
+    text-align: center;
+}
+
+.aboutinfo h2{
+    font-size: clamp(1.7rem, 8.5vw, 2.5rem);
+    margin-bottom: 20px;
+}
+
+.aboutinfo p {
+    font-size: clamp(0.875rem, 4vw, 1rem);
+    max-width: 600px;
+}
+
+.footer {
+    padding-block: 20px;
+    background: var(--maincolor);
+}
+
+.footercon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    color: white;
+    font-size: clamp(0.75rem, 4vw, 1rem);
+}
+
+.socmed a i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.socmed a:not(:last-child) {
+    margin-right: 10px;
+}

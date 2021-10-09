@@ -98,6 +98,7 @@
     background-position: center center;
     border-radius: .5rem;
     box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+    transition: 300ms;
 }
 
 .factsimg2 {
@@ -109,6 +110,7 @@
     background-position: center center;
     border-radius: .5rem;
     box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+    transition: 300ms;
 }
 
 .factsimg3 {
@@ -120,6 +122,16 @@
     background-position: center center;
     border-radius: .5rem;
     box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+    transition: 300ms;
+}
+
+.factsimg1:hover,
+.factsimg1:focus,
+.factsimg2:hover,
+.factsimg2:focus,
+.factsimg3:hover,
+.factsimg3:focus {
+    transform: scale(1.03);
 }
 
 .factsinfo {
